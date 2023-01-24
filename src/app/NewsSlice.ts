@@ -1,6 +1,6 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
-import {RootState} from './store'
 import News from "../data/News.interface";
+import {RootState} from './store'
 
 export interface NewsState {
   ordered: News[] | null;

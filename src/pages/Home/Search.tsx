@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import News from "./News";
-
-import {Box, Container, InputAdornment, TextField, Typography} from "@mui/material";
+import {Box, Button, Container, InputAdornment, TextField, Typography} from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
 const Search = () => {
@@ -45,7 +44,7 @@ const Search = () => {
                    onChange={handleChange} value={input}/>
       </Box>
       <News options={options}/>
-      <button onClick={() => setLimit((prevState) => prevState + 1)}>CLICK ME!</button>
+      <Button variant="contained" onClick={() => setLimit((prevState) => prevState + 5)}>CLICK ME FOR MORE!</Button>
     </Container>
   );
 };

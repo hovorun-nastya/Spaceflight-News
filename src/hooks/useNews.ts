@@ -44,7 +44,7 @@ export const useNews = ({
         }
       }
     )()
-  }, [limit, search])
+  }, [limit, search, dispatch])
 
   return {
     isLoading,

@@ -9,7 +9,7 @@ export interface NewsProps {
 }
 
 const News: FC<NewsProps> = ({options}) => {
-  const {ordered, isLoading, error, data} = useNews(options)
+  const {ordered, isLoading, error} = useNews(options)
 
   if (ordered?.length === 0) {
     return (

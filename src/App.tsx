@@ -1,5 +1,5 @@
-import Search from "./pages/Home/Search";
 import {Route, Routes} from "react-router";
+import Search from "./pages/Home/Search";
 import ArticlePage from "./pages/Article/ArticlePage";
 
 function App() {

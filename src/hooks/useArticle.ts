@@ -1,4 +1,3 @@
-import {useNavigate, useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch} from "../app/store";
 import {NewsSelector, setArticle, setIsFailed, setIsLoading} from "../app/NewsSlice";
@@ -30,7 +29,7 @@ export const useArticle = (id: string) => {
         }
       }
     )()
-  }, [id])
+  }, [id, data, dispatch])
 
   return {
     isLoading,
